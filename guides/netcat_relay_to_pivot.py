@@ -4,6 +4,7 @@ Creates the commands for a netcat relay to SSH into a target via pivot machine.
 """
 import sys
 import argparse
+import textwrap
 
 
 def parse_args(args: list):
@@ -36,10 +37,10 @@ def start_nc_relay(devname: str = "backpipe",
                    local_port: int = 2222,
                    remote_port: int = 22222
                    ) -> str:
-    cmd = f"""
+    cmd = textwrap.dedent(f"""
     mknod {devname} {devtype}
     nc -lvp {local_port} 0<{devname} | nc -lvp {remote_port} | tee {devname}
-    """
+    """)
     return cmd
 
 
@@ -50,10 +51,10 @@ def pivot_nc_relay(start_ip: str,
                    devname: str = "backpipe",
                    devtype: str = "p",
                    ) -> str:
-    cmd = f"""
+    cmd = textwrap.dedent(f"""
     mknod {devname} {devtype}
     nc {tgt_ip} {tgt_port}  0<{devname} | nc {start_ip} {local_port} | tee {devname}
-    """
+    """)
     return cmd
 
 
