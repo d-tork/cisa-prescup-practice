@@ -16,7 +16,7 @@ How you get here:
     | 4470813360    c0 35 15 c2 05 7e 60 7d 39 f7 a2 99 1e 44 16 85     AES128
     | 4471081904    53 25 fa a7 6d 6c bd b1 75 fd 3b d4 1d 96 b8 6a 1c 6f 2e 10 62 d9 40 a6 d4 2f 03 3b f0 f5 30 ca     AES256
 
-Challenge reference: pc2/round3a-100-buckets
+Challenge reference: pc2/team/round3a-100-buckets
 
 """
 import sys
