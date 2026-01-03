@@ -19,6 +19,7 @@ def main():
     args = parse_args(sys.argv[1:])
     label(start_nc_relay, host=args.you)
     label(pivot_nc_relay, start_ip=args.you, tgt_ip=args.tgt, host=args.pivot)
+    label(ssh_to_target, host=args.you)
     return
 
 
@@ -42,6 +43,14 @@ def start_nc_relay(devname: str = "backpipe",
     cmd = textwrap.dedent(f"""
     mknod {devname} {devtype}
     nc -lvp {local_port} 0<{devname} | nc -lvp {remote_port} | tee {devname}
+    """)
+    return cmd
+
+
+def ssh_to_target(dst_ip: str = "127.0.0.1", port: int = 22222) -> str:
+    """Create the command to ssh to a target."""
+    cmd = textwrap.dedent(f"""
+    ssh [user]@{dst_ip} -p {port}
     """)
     return cmd
 
