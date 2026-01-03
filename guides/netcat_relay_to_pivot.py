@@ -8,10 +8,10 @@ import argparse
 
 def parse_args(args: list):
     parser = argparse.ArgumentParser(prog="NetcatRelayPivot",
-                                      description="Create the commands for a netcat relay to pivot")
-    parser.add_argument("you", help="IP address of your attack platform")
-    parser.add_argument("pivot", help="IP address of the pivot box")
-    parser.add_argument("tgt", help="IP address of the target")
+                                      description="Create the commands for a netcat relay to pivot.")
+    parser.add_argument("--you", required=True, help="IP address of your attack platform")
+    parser.add_argument("--pivot", required=True, help="IP address of the pivot box")
+    parser.add_argument("--tgt", required=True, metavar="TARGET", help="IP address of the target")
     return parser.parse_args(args)
 
 def main():
