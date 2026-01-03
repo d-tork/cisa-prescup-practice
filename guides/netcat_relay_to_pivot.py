@@ -10,16 +10,17 @@ import textwrap
 def parse_args(args: list):
     parser = argparse.ArgumentParser(prog="NetcatRelayPivot",
                                       description="Create the commands for a netcat relay to pivot.")
-    parser.add_argument("--you", required=True, help="IP address of your attack platform")
-    parser.add_argument("--pivot", required=True, help="IP address of the pivot box")
-    parser.add_argument("--tgt", required=True, metavar="TARGET", help="IP address of the target")
+    parser.add_argument("--you", default="ATTACK_PLATFORM", help="IP address of your attack platform")
+    parser.add_argument("--pivot", default="PIVOT_BOX", help="IP address of the pivot box")
+    parser.add_argument("--tgt", default="TARGET_BOX", metavar="TARGET", help="IP address of the target")
+    parser.add_argument("--user", default="USER", metavar="TGTUSER", help="Username on the target box")
     return parser.parse_args(args)
 
 def main():
     args = parse_args(sys.argv[1:])
     label(start_nc_relay, host=args.you)
     label(pivot_nc_relay, start_ip=args.you, tgt_ip=args.tgt, host=args.pivot)
-    label(ssh_to_target, host=args.you)
+    label(ssh_to_target, user=args.user, host=args.you)
     return
 
 
@@ -47,10 +48,10 @@ def start_nc_relay(devname: str = "backpipe",
     return cmd
 
 
-def ssh_to_target(dst_ip: str = "127.0.0.1", port: int = 22222) -> str:
+def ssh_to_target(user: str = "user", dst_ip: str = "127.0.0.1", port: int = 22222) -> str:
     """Create the command to ssh to a target."""
     cmd = textwrap.dedent(f"""
-    ssh [user]@{dst_ip} -p {port}
+    ssh [{user}]@{dst_ip} -p {port}
     """)
     return cmd
 
