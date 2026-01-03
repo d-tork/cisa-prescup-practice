@@ -22,10 +22,12 @@ def main():
     return
 
 
-def label(func, host: str, *args, **kwargs):
+def label(func, host: str, root: bool = False, *args, **kwargs):
     """Wrap some output in a block designating the host it should be executed on."""
     prefix = f"==================== on {host} =================="
     print(prefix)
+    if root:
+        print("********************* (as root) ********************")
     print(func(*args, **kwargs))
     suffix = "---------------------------------------------------"
     print(suffix)
