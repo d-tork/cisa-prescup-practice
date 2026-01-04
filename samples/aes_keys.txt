@@ -1,49 +1,30 @@
 # BANNER FILE NOT PROVIDED (-b option)
 # BULK_EXTRACTOR-REC-Version: 1.6.0-dev-rec03 ($Rev: 10844 $)
 # Feature-Recorder: aes_keys
-# Filename: C:\Users\Axel\Desktop\memdump.mem
+# Filename: C:\users\Axel\Desktop\ftk-dump\memdump.mem
 # Feature-File-Version: 1.1
-62596544	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-62597216	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-62597888	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4470813360	c0 35 15 c2 05 7e 60 7d 39 f7 a2 99 1e 44 16 85 	AES128
-4471081904	53 25 fa a7 6d 6c bd b1 75 fd 3b d4 1d 96 b8 6a 1c 6f 2e 10 62 d9 40 a6 d4 2f 03 3b f0 f5 30 ca 	AES256
-4615256640	bf f7 8d 11 78 6a 1e 98 a0 46 43 bc fe 5f 72 ad 	AES128
-4654313792	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4654314464	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4654315808	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4654316480	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4654317152	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4771193328	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4856060480	fb 42 9c 6d f2 f7 27 4f 13 17 fc 66 a0 68 da 31 	AES128
-4856298688	e7 d1 d7 cd 16 f1 d8 ac 5e 0f 6f d5 c7 ee 89 6c 	AES128
-4891300032	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4891302048	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4891302720	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4907024640	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4907025984	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4907026656	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4907027328	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-4907028000	cf 8a 9d e1 e8 6e ab 58 9f 51 0d aa cd 6e bc 73 b6 eb c8 d4 c1 ed 2d c6 26 ea 8d fd 85 8f f8 69 	AES256
-5059737712	25 0e a2 06 6d b0 2b 3f 91 ad 41 68 9f 0a 96 85 	AES128
-5273243296	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5291726576	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5291727248	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5291728592	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5292779184	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5292780528	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5292781200	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5295928272	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5295928944	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5295929616	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5295930288	84 72 42 84 09 a5 98 93 1d a8 aa a1 26 a6 75 0d 90 47 70 61 9f 5c a0 05 bf 54 72 2c be 80 44 12 	AES256
-5297700896	c0 ca b3 9b d8 97 09 71 ed 10 f4 f1 ca a5 14 ef 8c e0 48 ca 3e 00 0c bb ed ac fe 71 b3 94 f1 5c 	AES256
-5297701552	65 66 2f 49 89 30 fa 91 c1 10 38 ac 4c ee a1 3f 	AES128
-5297702208	10 fd c1 fc 2a 91 82 6b 17 1b d8 29 cf d9 24 47 06 ad b7 07 02 76 82 44 5d 8b 5b 20 42 cf 57 8a 	AES256
-5877757376	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5877758048	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-5877758720	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
-7616102544	3d 50 66 27 2f fd 39 72 9d 21 3c bc f9 89 c9 a1 3b f1 89 c9 e3 e3 f4 8a 4c 65 b8 2e c4 b1 27 50 	AES256
-9507218096	bb 99 9b 9f 7c fc 33 4a b2 18 14 25 c6 03 c9 c0 	AES128
-9553388672	10 a1 a7 24 e3 79 47 c6 ed c6 2e 6e c4 11 6f f5 	AES128
+92414640	b8 5c bc 5b 08 a4 9d 52 8e e3 f6 a2 66 b1 a7 f1 	AES128
+4299681264	3d 50 66 27 2f fd 39 72 9d 21 3c bc f9 89 c9 a1 3b f1 89 c9 e3 e3 f4 8a 4c 65 b8 2e c4 b1 27 50 	AES256
+4464932656	53 25 fa a7 6d 6c bd b1 75 fd 3b d4 1d 96 b8 6a 1c 6f 2e 10 62 d9 40 a6 d4 2f 03 3b f0 f5 30 ca 	AES256
+4465966480	c0 35 15 c2 05 7e 60 7d 39 f7 a2 99 1e 44 16 85 	AES128
+4513451584	2b 9e 55 1c a5 18 3c c0 13 bf d1 54 f6 0b 23 27 42 f2 01 16 cd 05 60 47 06 4a a3 14 4a 6b de b5 	AES256
+4823174512	e9 c6 fc 7d cb 76 bb 3b d2 d9 c7 8e 15 c9 cb 49 	AES128
+4823175344	07 b1 58 c4 c2 b8 75 91 ed 43 bd 05 86 e4 60 04 	AES128
+4823177488	db 11 66 19 35 ba 6a dc e2 39 fd 87 f9 9c 79 2a 	AES128
+5389092144	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5389092816	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5435938704	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5435939376	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5435940048	f0 35 67 29 b8 c3 eb 0c 6d 98 72 25 78 54 95 6a 1c 13 ac ef 14 f5 18 c2 2b 42 2b fb 0a fb e4 60 	AES256
+5436666320	5d 88 53 1d 0a ca 77 0a 24 64 f8 85 a2 df 14 c2 de 2a 89 20 6d 1c d1 92 fb 61 d5 1a e8 65 5c 91 	AES256
+5436666992	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5436669008	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5436669680	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5436969360	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5437711536	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5437712208	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5437712880	a2 63 f4 ed 0b 50 31 9a 6a a9 04 42 c2 48 51 83 6e bb 21 cc 87 8e 29 c2 50 09 36 9b 01 df 98 32 	AES256
+5437713552	6d 53 83 e8 ee 92 5b ba 4e 08 bc e4 7e aa 37 b2 ff d6 c2 4b f5 d9 fa 75 e9 c9 1d a3 54 46 b3 df 	AES256
+5737099952	b8 5c bc 5b 08 a4 9d 52 8e e3 f6 a2 66 b1 a7 f1 	AES128
+9553388672	f2 79 ce 83 db b0 3e 25 df 97 63 66 5f 2e fa bd 	AES128
 
