@@ -92,5 +92,11 @@ def hex_to_base64(s: str) -> str:
 
 if __name__ == '__main__':
     logging.basicConfig(level='DEBUG')
-    main(sys.argv[1])
+    try:
+        aes_file = sys.argv[1]
+    except IndexError:
+        logging.error("You must supply an aes_keys.txt file from bulk_extractor.exe")
+        print(sys.modules[__name__].__doc__)
+        sys.exit(1)
+    main(aes_file)
 

@@ -9,7 +9,7 @@ import textwrap
 
 def parse_args(args: list):
     parser = argparse.ArgumentParser(prog="NetcatRelayPivot",
-                                      description="Create the commands for a netcat relay to pivot.")
+                                      description=sys.modules[__name__].__doc__)
     parser.add_argument("--you", default="ATTACK_PLATFORM", help="IP address of your attack platform")
     parser.add_argument("--pivot", default="PIVOT_BOX", help="IP address of the pivot box")
     parser.add_argument("--tgt", default="TARGET_BOX", metavar="TARGET", help="IP address of the target")
