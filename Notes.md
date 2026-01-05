@@ -34,3 +34,17 @@ sudo -V
 
 sudo -l
 ```
+
+# Defense
+
+## How to spot a SQL injection
+
+Collect a pcap during the time you think the injection took place, open it in Wireshark, and search the **packet details** for a **string** that matches common SQL injection patterns, such as `1=1`. Now you have the IP of the attacker. 
+
+## Find a brute force attacker
+
+In Wireshark looking at packets sent to your web server (`ip.dst == x.x.x.x`), look for multiple hits on the login page per second, in rapid succession. That's your attacker. 
+
+## Identify what was exfiltrated from a website
+
+In wireshark, go to File > Export Objects > HTTP and choose the content type (in this case we were **told** it was a sql database, so choose `application/x-sqlite3`). You can download the file from there. 
