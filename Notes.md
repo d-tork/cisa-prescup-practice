@@ -35,6 +35,36 @@ sudo -V
 sudo -l
 ```
 
+## Reverse engineering / binary analysis
+
+To analyze a binary to find a list of dynamically-linked symbols, use
+```bash
+nm -D mybinary
+```
+
+To run the GNU debugger: 
+```bash
+chmod +x mybinary
+gdb ./mybinary
+```
+Then add a breakpoint at the function identified from `nm` (because `AES_ige_encrypt` is the only thing having to do with the question, about encryption)
+```
+(gdb) b AES_ige_encrypt
+# answer yes to the prompt
+
+# then run the program
+(gdb) r
+
+# print registers
+(gdb) info r
+
+# examine a buffer at a location (in this case, `rsi` leads to `0x5555555bc7e0`)
+(gdb) x/32bc 0x5555555bc7e0
+
+# run the program until the next return occurs
+(gdb) fin
+```
+
 # Defense
 
 ## How to spot a SQL injection
