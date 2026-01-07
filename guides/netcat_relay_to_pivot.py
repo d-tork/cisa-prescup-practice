@@ -1,6 +1,7 @@
 """
 Creates the commands for a netcat relay to SSH into a target via pivot machine.
 
+Challenge reference: pc2/team/round1-2-boxes-4-shells
 """
 import sys
 import argparse

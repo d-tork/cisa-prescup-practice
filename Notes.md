@@ -24,7 +24,7 @@ When SSH is filtered and you don't have a route directly from your box to the ta
 
 If FTP (port 21) is open, use Filezilla to get a file.
 
-Cracking a remote service password (ssh, smb, redis, rdp, postgres, sql, ftp, etc.) given a password list: use xHydra.
+Cracking a remote service password (ssh, smb, redis, rdp, postgres, sql, ftp, etc.) given a username and password list: use xHydra.
 
 ## Priv escalation
 

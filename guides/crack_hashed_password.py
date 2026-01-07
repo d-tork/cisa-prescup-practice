@@ -1,6 +1,8 @@
 """
 Crack a hashed password for a known hashing algorithm and with johntheripper and a wordlist.
 
+Challenge reference: pc2/team/round1-2-boxes-4-shells
+
 """
 import sys
 import argparse
