@@ -1,5 +1,12 @@
 # Notes
 
+LLMs to help:
+- [ChatGPT](https://chatgpt.com/)
+- [Claude](https://claude.ai/) (requires sign-in)
+- [DeepSeek](https://chat.deepseek.com/) (requires sign-in)
+- [DuckDuckGo](https://duck.ai)
+- [Brave LEO](brave://leo-ai/)
+
 ## Scanning
 
 If nmap isn't available you can use netcat to scan:
@@ -187,6 +194,15 @@ Then add a breakpoint at the function identified from `nm` (because `AES_ige_enc
 (gdb) fin
 ```
 
+## Capturing / acquiring volatile memory
+memdump
+
+* Windows: WinPmem, FTK Imager
+* macOS: osxpmem
+* Linux: [AVML](https://github.com/microsoft/avml)
+
+_Then_ you can use [Volatility3](https://volatility3.readthedocs.io/en/stable/).
+
 # Defense
 
 ## How to spot a SQL injection
@@ -223,3 +239,5 @@ curl -X 'GET' \
     -H 'UserAuthToken: $mytoken \
     -H 'accept: */*'
 ```
+
+# Volatility
