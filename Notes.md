@@ -5,7 +5,7 @@ LLMs to help:
 - [Claude](https://claude.ai/) (requires sign-in)
 - [DeepSeek](https://chat.deepseek.com/) (requires sign-in)
 - [DuckDuckGo](https://duck.ai)
-- [Brave LEO](brave://leo-ai/)
+- Brave LEO `brave://leo-ai/`
 
 ## Scanning
 
